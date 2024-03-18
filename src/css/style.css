@@ -1,11 +1,335 @@
-@media screen and (width >= 320px) {
-	#some-id {
-		color: red;
+@media screen and (width >=320px) {
+	body {
+		font-size: 14px;
+		font-family: 'Barlow Semi Condensed', sans-serif;
+		color: #5F6C7B;
+		margin: 0;
+	}
+
+	.cover-image {
+		width: 100%;
+		max-height: 20em;
+		object-fit: cover;
+	}
+
+	.header-text-container {
+		max-width: 80%;
+		margin-left: 1.2em;
+	}
+
+	.webpage-title {
+		font-family: 'Comforter Brush', cursive;
+		font-size: 4em;
+		color: #094067;
+		margin: 0;
+	}
+
+	.intro-paragraph {
+		margin: 0;
+		max-width: 80%;
+	}
+
+
+
+	.section-title {
+		font-family: "Itim", sans-serif;
+		color: #094067;
+		font-size: 2.5em;
+		text-align: center;
+	}
+
+	/* To make the text-box size match the size of the picture,
+	I used Temani Afif's method to achieve the aesthetic
+	from my mock-up. From there on, I played around with
+	the display until I found a method that worked for the
+	look I wanted.
+	(https://stackoverflow.com/a/55041133)
+	*/
+	.top-destinations {
+		margin-top: 12em;
+	}
+
+	.top-destinations-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 15px;
+		list-style-type: none;
+	}
+
+	.td-ultimate {
+		display: inline-block;
+		margin: 8px;
+
+	}
+
+	.td-image {
+		display: block;
+		width: 280px;
+		height: 250px;
+		object-fit: cover;
+		border-radius: 14px 14px 0px 0px;
+
+	}
+
+	.td-rectangle {
+		height: 13px;
+		width: 280px;
+		background-color: #EF4565;
+
+	}
+
+	.list-text-container {
+		width: 0;
+		min-width: 100%;
+		background-color: #094067;
+		margin-bottom: 20px;
+		border-radius: 0px 0px 14px 14px;
+		color: white;
+		display: flex;
+	}
+
+	.td-list-item-heading,
+	.td-text {
+		margin-left: 15px;
+		max-width: 90%;
+
+	}
+
+	.td-text {
+		margin-bottom: 30px;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		text-shadow: 2px 2px 3px #5F6C7B;
+	}
+
+	.read-more-button {
+		background: #A7A9BE;
+		border-radius: 14px;
+		padding: 6px;
+		border: 1px #A7A9BE;
+		box-shadow: 2px 2px 3px #041b2b;
+		margin-left: 70%;
+		margin-bottom: 5%;
+	}
+
+	.travel-tips {
+		margin-bottom: 10em;
+		margin-top: 10em;
+	}
+
+	.tt-image {
+		width: 100%;
+		max-height: 20em;
+		object-fit: cover;
+	}
+
+	.travel-tips li {
+		margin: 5px;
+		font-size: 1.2em;
+	}
+
+
+	.lc-item-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 15px;
+		list-style-position: inside 0;
+	}
+
+	.lc-image {
+		width: 280px;
+		height: 250px;
+		object-fit: cover;
+		border-radius: 14px 14px 0px 0px;
+	}
+
+	.lc-rectangle {
+		height: 13px;
+		width: 280px;
+		background-color: #EF4565;
+	}
+
+	.lc-text {
+		width: 260px;
+		height: fit-content;
+		background-color: #FFDEE4;
+		margin-bottom: 20px;
+		margin-top: auto;
+		padding: 0.4em;
+		padding-bottom: 2em;
+		border-radius: 0px 0px 14px 14px;
+		text-align: center;
+		font-size: 1.4em;
 	}
 }
 
-@media screen and (width >= 500px) {
+
+@media screen and (width >=500px) {
+
+	body {
+		font-size: 1.1em;
+	}
+
+	.cover-image {
+		width: 100%;
+	}
+
+	.header-text-container {
+		font-size: 1.1em;
+	}
+
+	.intro-paragraph {
+		max-width: 60%;
+	}
+
+	.section-title {
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	.top-destinations {
+		margin-top: 5em;
+	}
+
+	.top-destinations-list {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.td-image {
+		min-width: 100px;
+		width: 500px;
+		height: 15em;
+		border-radius: 14px 0px 0px 14px;
+		margin: 0;
+	}
+
+	.td-rectangle {
+		width: 13px;
+		height: 15em;
+	}
+
+	.list-text-container {
+		height: 15em;
+		min-width: 20em;
+		border-radius: 0px 14px 14px 0px;
+		margin: 0;
+	}
+
+	.td-ultimate {
+		display: flex;
+		margin-bottom: 10px;
+		max-width: 90%;
+	}
+
+
+	.travel-tips {
+		display: flex;
+	}
+
+	.tt-image {
+		max-height: 90em;
+		min-width: 50%;
+		object-fit: cover;
+		order: 2;
+	}
+
+	.travel-tips-list {
+		font-size: 0.5em;
+		margin: 5em;
+	}
+
+	.lc-image,
+	.lc-rectangle {
+		max-height: 10em;
+		max-width: 10em;
+	}
+
+	.lc-text {
+		font-size: 1em;
+		width: 9.2em;
+
+	}
+
+	.local-cuisine {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.lc-item-container {
+		padding: 0.6em;
+	}
+
+	.read-more-button {
+		margin-left: 60%;
+	}
+
+	a {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (width >=1280px) {
 	#some-id {
 		color: red;
 	}
+
+	body {
+		font-size: 1.3em;
+	}
+
+	.top-destinations-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 15px;
+		list-style-type: none;
+	}
+
+	.td-ultimate {
+		display: inline-block;
+		margin: 8px;
+
+	}
+
+	.td-image {
+		width: fit-content;
+		min-width: 16em;
+		display: block;
+		height: 250px;
+		object-fit: cover;
+		border-radius: 14px 14px 0px 0px;
+
+	}
+
+	.td-rectangle {
+		height: 13px;
+		width: 100%;
+		background-color: #EF4565;
+	}
+
+	.list-text-container {
+		width: 0;
+		min-width: 100%;
+		background-color: #094067;
+		border-radius: 0px 0px 14px 14px;
+
+	}
+
+	.read-more-button {
+		margin-left: 65%;
+	}
+
+	.lc-item-container {
+		padding: 0.8em;
+	}
+
 }

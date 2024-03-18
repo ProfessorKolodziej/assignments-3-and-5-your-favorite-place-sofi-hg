@@ -7,7 +7,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Description here" />
 	<title>My Favorite Place</title>
-	<link href="css/style.css" rel="stylesheet" /> 
+	<link href="css/style.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Comforter+Brush&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Comforter+Brush&family=Itim&display=swap"
+		rel="stylesheet">
 	<!--
 		You can connect the CSS to the HTML here,
 		inside the head tag. Here is an example:
@@ -20,91 +33,152 @@
 </head>
 
 <body>
-	<header>
-		<img src="https://placekitten.com/320/192" alt="kitten">
+	<img class="cover-image" src="images/Richmond-liscensed picture.jpeg" alt="Picture of Richmond Skyline">
+	<header class="website-header">
+		<div class="header-text-container">
+			<h1 class="webpage-title"> Richmond, VA</h1>
+			<p class="intro-paragraph">
+				Richmond, Virginia is the capital of Virginia full of
+				delicious restaurants, vital United States history, and
+				local art. Built next to the James River, the city has
+				wonderful water views and beautiful local flora and fauna.
+				Established in 1775, it is one of America's oldest cities and
+				a witness to both the Revolutionary and Civil War.
+			</p>
+		</div>
 	</header>
-	<h1>Richmond, VA</h1>
-	<p>Richmond, Virginia is the capital of Virginia full of
-		delicious restaurants, vital United States history, and
-		local art. Built next to the James River, the city has
-		wonderful water views and beautiful local flora and fauna.
-		Established in 1775, it is one of America's oldest cities and
-		a witness to both the Revolutionary and Civil War.</p>
-	<article>
-		<h2>Top Destinations</h2>
-		<ol>
-			<li>
-				<h3>VMFA</h3>
-				<p>Museum ull of inspiring and beautiful collections of art from around the world.</p>
-				<a href=" https://vmfa.museum/">read more</a>
-				<img src="https://placekitten.com/125/103">
-			</li>
-			<li>
-				<h3>Belle Isle</h3>
-				<p>Gorgeous part of the river with views of the entire city–perfect for swimming, sunbathing, kayaking,
-					and
-					more.</p>
-				<a href="https://en.wikipedia.org/wiki/Belle_Isle_(Richmond,_Virginia)">read more</a>
-				<img src="https://placekitten.com/125/103">
-			</li>
-			<li>
-				<h3>The Poe Museum</h3>
-				<p>Richmond was the hometown of famous American writer, Edgar Allen Poe. This  museum was curated about
-					his
-					life, including his upbringing in Richmond.</p>
-				<a href="https://poemuseum.org/">read more</a>
-				<img src="https://placekitten.com/125/103">
-			</li>
-			<li>
-				<h3>The Hollywood Cemetery</h3>
-				<p>Scenic and historical cemetery good for walking and taking in views of the Richmond skyline and the
-					James
-					River.</p>
-				<a href="https://www.hollywoodcemetery.org/">read more</a>
-				<img src="https://placekitten.com/125/103">
-			</li>
-			<li>
-				<h3>Maymont</h3>
-				<p>Gigantic park with various gardens from Italian to Japanese. Also a wildlife center where you can see
-					local fauna and rescued animals like the bobcat, black bear, red fox, raptors, and bison.</p>
-				<a href="https://maymont.org/explore/animals/wildlife-habitats/">read more</a>
-				<img src="https://placekitten.com/125/103">
-			</li>
+
+	<section class="top-destinations">
+		<h2 class="section-title">Top Destinations</h2>
+		<ol class="top-destinations-list">
+			<div class="td-ultimate">
+				<img class="td-image" src="images/vmfa.jpeg">
+				<div class="td-rectangle"></div>
+				<div class="list-text-container">
+					<li>
+						<h3 class="td-list-item-heading">1. VMFA</h3>
+						<p class="td-text">Museum ull of inspiring and beautiful collections of art from around the
+							world.
+						</p>
+						<button class="read-more-button">
+							<a href=" https://vmfa.museum/">read more</a>
+						</button>
+					</li>
+				</div>
+			</div>
+			<div class="td-ultimate">
+				<img class="td-image" src="images/belle isle.jpeg" alt="Picture of Belle Isle">
+				<div class="td-rectangle"></div>
+				<div class="list-text-container">
+					<li>
+						<h3 class="td-list-item-heading">2. Belle Isle</h3>
+						<p class="td-text">Gorgeous part of the river with views of the entire city, perfect for
+							swimming, sunbathing, kayaking,
+							and
+							more.</p>
+						<button class="read-more-button">
+							<a href="https://en.wikipedia.org/wiki/Belle_Isle_(Richmond,_Virginia)">read more</a>
+						</button>
+					</li>
+				</div>
+			</div>
+			<div class="td-ultimate">
+				<img class="td-image" src="images/poe museum.jpeg" alt="Picture of The Poe Museum">
+				<div class="td-rectangle"></div>
+				<div class="list-text-container">
+					<li>
+						<h3 class="td-list-item-heading">3. The Poe Museum</h3>
+						<p class="td-text">Richmond was the hometown of famous American writer, Edgar Allen Poe. This
+							museum
+							was curated about
+							his
+							life, including his upbringing in Richmond.</p>
+						<button class="read-more-button">
+							<a href="https://poemuseum.org/">read more</a>
+						</button>
+					</li>
+				</div>
+			</div>
+			<div class="td-ultimate">
+				<img class="td-image" src="images/hollywood cemetery.jpeg" alt="Picture of The Hollywood Cemetery">
+				<div class="td-rectangle"></div>
+				<div class="list-text-container">
+					<li>
+						<h3 class="td-list-item-heading">4. The Hollywood Cemetery</h3>
+						<p class="td-text">Scenic and historical cemetery good for walking and taking in views of
+							the Richmond skyline and the James River.
+						</p>
+						<button class="read-more-button">
+							<a href="https://www.hollywoodcemetery.org/">read more</a>
+						</button>
+					</li>
+				</div>
+			</div>
+			<div class="td-ultimate">
+				<img class="td-image" src="images/Maymont.jpeg" alt="Picture of Maymont">
+				<div class="td-rectangle"></div>
+				<div class="list-text-container">
+					<li>
+						<h3 class="td-list-item-heading">5. Maymont</h3>
+						<p class="td-text">Gigantic park with various gardens from Italian to Japanese. Also a
+							wildlife
+							center where you can see
+							local fauna and rescued animals like the bobcat, black bear, red fox, raptors, and bison.</p>
+						<button class="read-more-button">
+							<a href="https://maymont.org/explore/animals/wildlife-habitats/">read more</a>
+						</button>
+					</li>
+				</div>
+			</div>
 		</ol>
-	</article>
-	<article>
-		<h2>Travel Tips</h2>
-		<ul>
-			<li>The public transit is free for use and takes you anywhere around richmond</li>
-			<li>Always look out for music festivals as there is almost always one happening</li>
-			<li>Take advantage of local farmers markets with fresh farm to table ingredients and products</li>
-			<li>Bring allergy medication if you are allergic to pollen as there are many trees and plants that will have
-				you sneezing in spring</li>
-			<li>Make sure if you swim in the James River that the water is flowing, still water can have harmful
-				bacteria
-			</li>
-		</ul>
-		<img src="https://placekitten.com/125/103">
-	</article>
-	<article>
-		<h2>Local Cuisine</h2>
-		<img src="https://placekitten.com/125/103">
-		<aside>
-			<p>Lemon: Best Indian Cuisine in town</p>
+	</section>
+
+
+
+	<section class="travel-tips">
+		<img class="tt-image" src="images/Richmond Skyline.jpeg" alt="Picture of Richmond Skyline">
+		<div class="tt-text-container">
+			<h2 class="section-title">Travel Tips</h2>
+			<ul class="travel-tips-list">
+				<li>The public transit is
+					<strong>free</strong>
+					for use and takes you anywhere around richmond
+				</li>
+				<li>Always look out for music festivals as there is almost always one happening</li>
+				<li>Take advantage of local farmers markets with fresh farm to table ingredients and products</li>
+				<li>Bring allergy medication if you are allergic to pollen as there are many trees and plants that will have
+					you sneezing in spring</li>
+				<li>Make sure if you swim in the James River that the water is flowing, still water can have harmful
+					bacteria
+				</li>
+			</ul>
+		</div>
+	</section>
+
+
+	<h2 class="section-title">Local Cuisine</h2>
+	<section class="local-cuisine">
+		<aside class="lc-item-container">
+			<img class="lc-image" src="images/Lemon.jpeg" alt="Picture of Lemon Dinner">
+			<div class="lc-rectangle"></div>
+			<p class="lc-text">Lemon: Best Indian Cuisine in town</p>
 		</aside>
-		<img src="https://placekitten.com/125/103">
-		<aside>
-			<p>The Galaxy Diner: Retro 50’s space themed american diner</p>
+		<aside class="lc-item-container">
+			<img class="lc-image" src="images/Galaxy DIner.jpeg" alt="Picture of The Galaxy Diner">
+			<div class="lc-rectangle"></div>
+			<p class="lc-text">The Galaxy Diner: Retro 50s space themed american diner</p>
 		</aside>
-		<img src="https://placekitten.com/125/103">
-		<aside>
-			<p>Bottoms Up: Best sourdough pizza in town</p>
+		<aside class="lc-item-container">
+			<img class="lc-image" src="images/BottomsUp.jpeg" alt="Picture of Bottoms Up Pizza">
+			<div class="lc-rectangle"></div>
+			<p class="lc-text">Bottoms Up: Best sourdough pizza in town</p>
 		</aside>
-		<img src="https://placekitten.com/125/103">
-		<aside>
-			<p>Mama J’s Kitchen: Black-owned out of this world southern and soul food restaurant</p>
+		<aside class="lc-item-container">
+			<img class="lc-image" src="images/MamaJ's.jpeg" alt="Picture of Mama J's Dinner">
+			<div class="lc-rectangle"></div>
+			<p class="lc-text">Mama J’s Kitchen: Delicious southern-style restaurant</p>
 		</aside>
-	</article>
+	</section>
 	<!--
 	This is an HTML comment.
 	It is optional, and you can delete it or use it to
