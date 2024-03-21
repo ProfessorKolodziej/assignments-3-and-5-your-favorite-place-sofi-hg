@@ -7,17 +7,25 @@
 	}
 
 	.cover-image {
+		position: relative;
+
+		&::after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: linear-gradient(transparent, rgb(255, 255, 255));
+		}
+	}
+
+	.cover-image-link {
 		width: 100%;
 		max-height: 20em;
 		object-fit: cover;
 		position: relative;
 		display: block;
-
-		&::after {
-			content: "";
-			height: 100%;
-			width: 100%;
-		}
 	}
 
 	.header-text-container {
@@ -39,8 +47,6 @@
 		max-width: 80%;
 	}
 
-
-
 	.section-title {
 		font-family: "Itim", sans-serif;
 		color: #094067;
@@ -48,12 +54,11 @@
 		text-align: center;
 	}
 
-
 	.top-destinations {
 		margin-top: 15em;
 	}
 
-	.top-destinations-list {
+	.td-ordered-list {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -62,14 +67,13 @@
 		list-style-type: none;
 	}
 
-	.td-ultimate {
-		margin: 8px;
-
+	.top-destinations h2 {
+		flex: 2 1 50em;
 	}
 
 	.td-image {
 		display: block;
-		width: 280px;
+		width: 299.6px;
 		height: 250px;
 		object-fit: cover;
 		border-radius: 14px 14px 0px 0px;
@@ -78,50 +82,46 @@
 
 	.td-rectangle {
 		height: 13px;
-		width: 280px;
+		width: 299.6px;
 		background-color: #EF4565;
 
 	}
 
-	.td-list-text-container {
+	.td-text-container {
 		max-width: 280px;
 		background-color: #094067;
 		margin-bottom: 20px;
 		border-radius: 0px 0px 14px 14px;
 		color: white;
 		display: flex;
+		flex-direction: column;
+		padding: 0.7em;
+		padding-top: 0.1em;
 	}
 
-	.td-list-item-heading,
-	.td-text {
-		margin-left: 15px;
-		max-width: 90%;
-
-	}
-
-	.td-text {
-		margin-bottom: 30px;
-	}
-
-	a {
-		color: white;
-		text-decoration: none;
-		text-shadow: 2px 2px 3px #5F6C7B;
+	.td-text-container h3 {
+		margin: 0;
+		padding: 0;
+		margin-top: 0.2em;
 	}
 
 	.read-more-button {
+		color: white;
+		text-decoration: none;
+		text-shadow: 2px 2px 3px #5F6C7B;
 		background: #A7A9BE;
-		border-radius: 14px;
-		padding: 6px;
+		border-radius: 20px;
+		padding: 7px;
 		border: 1px #A7A9BE;
 		box-shadow: 2px 2px 3px #041b2b;
 		margin-left: 70%;
-		margin-bottom: 5%;
+		margin-bottom: 3%;
+		text-align: center;
 	}
 
 	.travel-tips {
 		margin-bottom: 10em;
-		margin-top: 10em;
+		margin-top: 3em;
 		position: relative;
 	}
 
@@ -131,6 +131,21 @@
 	}
 
 	.tt-image {
+		position: relative;
+
+		&::after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: linear-gradient(rgba(255, 255, 255, 1), transparent, rgba(255, 255, 255, 1));
+		}
+	}
+
+	.tt-image-link {
+		height: 100%;
 		width: 100%;
 		max-height: 20em;
 		object-fit: cover;
@@ -142,7 +157,7 @@
 	}
 
 	.local-cuisine {
-		margin-top: 25em;
+		margin-top: 24em;
 	}
 
 	.lc-item-container {
@@ -208,40 +223,62 @@
 		margin-top: 17em;
 	}
 
-	.top-destinations-list {
+	.td-ordered-list {
+		display: flex;
+		margin-bottom: 10px;
+		max-width: 90%;
+	}
+
+	.td-ultimate {
+		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
+		margin: 0.5em;
+
 	}
 
 	.td-image {
 		min-width: 100px;
-		width: 500px;
-		height: 15em;
+		max-width: 400px;
+		height: 14em;
 		border-radius: 14px 0px 0px 14px;
 		margin: 0;
 	}
 
 	.td-rectangle {
 		width: 13px;
-		height: 15em;
+		height: 14em;
 	}
 
-	.td-list-text-container {
-		height: 15em;
+	.td-text-container {
+		height: 12.3em;
 		min-width: 20em;
 		border-radius: 0px 14px 14px 0px;
 		margin: 0;
+		padding-top: 1em;
 	}
 
-	.td-ultimate {
-		display: flex;
-		margin-bottom: 10px;
-		max-width: 90%;
+	.read-more-button {
+		margin-left: 55%;
+		margin-top: 5%;
+		font-size: 1.3em;
+		;
 	}
 
 
 	.travel-tips {
 		display: flex;
+		flex-direction: row;
+		margin: 0;
+		margin-top: 2em;
+	}
+
+	.tt-text-container {
+		font-size: 1.2em;
+		top: 79%;
+		order: 1;
+		position: static;
+		padding-top: 5em;
+		padding-bottom: 5em;
 	}
 
 	.tt-image {
@@ -251,14 +288,14 @@
 		order: 2;
 	}
 
-	.tt-text-container {
-		font-size: 1.2em;
-		top: 79%;
+	.tt-image-link {
+		max-height: 130em;
 	}
 
 	.travel-tips-list {
 		font-size: 0.5em;
 		margin: 4em;
+
 	}
 
 	.lc-image,
@@ -283,6 +320,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
+		margin-top: 3em;
 	}
 
 	.local-cuisine h2 {
@@ -292,41 +330,28 @@
 	.lc-item-container {
 		padding: 0.6em;
 	}
-
-	.read-more-button {
-		margin-left: 60%;
-	}
-
-	a {
-		font-size: 1.5em;
-	}
-
 }
 
 
 @media screen and (width >=1280px) {
-	#some-id {
-		color: red;
-	}
 
 	body {
 		font-size: 1.1em;
 	}
 
-
-	.top-destinations-list {
+	.td-ordered-list {
 		display: grid;
 		grid-template-columns: repeat(3, 22em);
 		margin: 0;
+		margin-left: 3.5em;
 	}
 
-	.td-ultimate:first-child {
+	.td-ordered-list li:first-child {
 		grid-row: span 2;
-
 	}
 
-	.td-ultimate:first-child .td-image {
-		height: 38em;
+	.td-ordered-list li:first-child img {
+		height: 39.5em;
 		margin: 0;
 	}
 
@@ -350,8 +375,8 @@
 		background-color: #EF4565;
 	}
 
-	.td-list-text-container {
-		min-width: 18em;
+	.td-text-container {
+		min-width: 16.6em;
 		border-radius: 0px 0px 14px 14px;
 		height: 14em;
 		font-size: 1.15em;
@@ -359,11 +384,11 @@
 	}
 
 	.read-more-button {
-		margin-left: 65%;
+		margin-top: 1em;
 	}
 
-	.tt-text-container {
-		font-size: 1.5em;
+	.tt-text-container ul {
+		font-size: 0.8em;
 		top: 87%;
 	}
 
