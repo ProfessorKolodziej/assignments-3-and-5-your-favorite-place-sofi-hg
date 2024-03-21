@@ -10,11 +10,21 @@
 		width: 100%;
 		max-height: 20em;
 		object-fit: cover;
+		position: relative;
+		display: block;
+
+		&::after {
+			content: "";
+			height: 100%;
+			width: 100%;
+		}
 	}
 
 	.header-text-container {
 		max-width: 80%;
 		margin-left: 1.2em;
+		position: absolute;
+		top: 31%;
 	}
 
 	.webpage-title {
@@ -38,15 +48,9 @@
 		text-align: center;
 	}
 
-	/* To make the text-box size match the size of the picture,
-	I used Temani Afif's method to achieve the aesthetic
-	from my mock-up. From there on, I played around with
-	the display until I found a method that worked for the
-	look I wanted.
-	(https://stackoverflow.com/a/55041133)
-	*/
+
 	.top-destinations {
-		margin-top: 12em;
+		margin-top: 15em;
 	}
 
 	.top-destinations-list {
@@ -59,7 +63,6 @@
 	}
 
 	.td-ultimate {
-		display: inline-block;
 		margin: 8px;
 
 	}
@@ -80,9 +83,8 @@
 
 	}
 
-	.list-text-container {
-		width: 0;
-		min-width: 100%;
+	.td-list-text-container {
+		max-width: 280px;
 		background-color: #094067;
 		margin-bottom: 20px;
 		border-radius: 0px 0px 14px 14px;
@@ -120,6 +122,12 @@
 	.travel-tips {
 		margin-bottom: 10em;
 		margin-top: 10em;
+		position: relative;
+	}
+
+	.tt-text-container {
+		position: absolute;
+		top: 73%;
 	}
 
 	.tt-image {
@@ -133,14 +141,15 @@
 		font-size: 1.2em;
 	}
 
+	.local-cuisine {
+		margin-top: 25em;
+	}
 
 	.lc-item-container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		padding: 15px;
-		list-style-position: inside 0;
 	}
 
 	.lc-image {
@@ -162,7 +171,7 @@
 		background-color: #FFDEE4;
 		margin-bottom: 20px;
 		margin-top: auto;
-		padding: 0.4em;
+		padding: 0.5em;
 		padding-bottom: 2em;
 		border-radius: 0px 0px 14px 14px;
 		text-align: center;
@@ -183,6 +192,7 @@
 
 	.header-text-container {
 		font-size: 1.1em;
+		top: 38%;
 	}
 
 	.intro-paragraph {
@@ -195,7 +205,7 @@
 	}
 
 	.top-destinations {
-		margin-top: 5em;
+		margin-top: 17em;
 	}
 
 	.top-destinations-list {
@@ -216,7 +226,7 @@
 		height: 15em;
 	}
 
-	.list-text-container {
+	.td-list-text-container {
 		height: 15em;
 		min-width: 20em;
 		border-radius: 0px 14px 14px 0px;
@@ -241,9 +251,14 @@
 		order: 2;
 	}
 
+	.tt-text-container {
+		font-size: 1.2em;
+		top: 79%;
+	}
+
 	.travel-tips-list {
 		font-size: 0.5em;
-		margin: 5em;
+		margin: 4em;
 	}
 
 	.lc-image,
@@ -255,13 +270,23 @@
 	.lc-text {
 		font-size: 1em;
 		width: 9.2em;
+		padding: 0.4em;
+		margin: 0;
+		min-height: 4em;
+		margin-bottom: 2em;
+		;
 
 	}
 
 	.local-cuisine {
 		display: flex;
-		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: center;
+	}
+
+	.local-cuisine h2 {
+		flex: 2 1 30em;
 	}
 
 	.lc-item-container {
@@ -275,7 +300,9 @@
 	a {
 		font-size: 1.5em;
 	}
+
 }
+
 
 @media screen and (width >=1280px) {
 	#some-id {
@@ -283,15 +310,24 @@
 	}
 
 	body {
-		font-size: 1.3em;
+		font-size: 1.1em;
 	}
 
+
 	.top-destinations-list {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		padding: 15px;
-		list-style-type: none;
+		display: grid;
+		grid-template-columns: repeat(3, 22em);
+		margin: 0;
+	}
+
+	.td-ultimate:first-child {
+		grid-row: span 2;
+
+	}
+
+	.td-ultimate:first-child .td-image {
+		height: 38em;
+		margin: 0;
 	}
 
 	.td-ultimate {
@@ -301,10 +337,8 @@
 	}
 
 	.td-image {
-		width: fit-content;
-		min-width: 16em;
-		display: block;
-		height: 250px;
+		width: 20.7em;
+		height: 10em;
 		object-fit: cover;
 		border-radius: 14px 14px 0px 0px;
 
@@ -312,15 +346,15 @@
 
 	.td-rectangle {
 		height: 13px;
-		width: 100%;
+		width: 20.7em;
 		background-color: #EF4565;
 	}
 
-	.list-text-container {
-		width: 0;
-		min-width: 100%;
-		background-color: #094067;
+	.td-list-text-container {
+		min-width: 18em;
 		border-radius: 0px 0px 14px 14px;
+		height: 14em;
+		font-size: 1.15em;
 
 	}
 
@@ -328,8 +362,16 @@
 		margin-left: 65%;
 	}
 
+	.tt-text-container {
+		font-size: 1.5em;
+		top: 87%;
+	}
+
+	.tt-image {
+		min-height: 29em;
+	}
+
 	.lc-item-container {
 		padding: 0.8em;
 	}
-
 }
